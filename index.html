@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>CV Anda</title>
+  </head>
+
+  <body>
+    <header>
+      <header>
+        <!-- Tambahkan gambar di atas nama -->
+        <div class="profile-picture">
+          <img src="images/icon-192x192.jpeg" alt="Alya Firyalda" />
+        </div>
+        <h1>Alya Firyalda</h1>
+        <p>Teknik Informatika (22205020)</p>
+      </header>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Alya Firyalda, a student at Stmik YMI Tegal majoring in information engineering, class of 2022. During college I wanted to study programming in more depth. My experience started early when I took computer lessons, which introduced me to the basics of programming and information technology.
+Outside of studies, I have a hobby of photographing random things that catch my attention, from unique views to details of everyday life. I also really enjoy listening to songs and singing, which is a way for me to relieve stress and add enthusiasm to my daily life.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Education</h2>
+      <ul>
+        <li>SMA 01 MOGA 2019 - 2021</li>
+        <li>STMIK YMI TEGAL 2022 - NEW</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>BEM</strong> (Badan Eksekutif Mahasiswa)</li>
+        <li><strong>Perusahaan B</strong> - Posisi</li>
+      </ul>
+    </section>
+
+    <!-- Tambahkan bagian Kontak -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="responseMessage"></div>
+    </section>
+
+    <script>
+      window.addEventListener("load", () => {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then((registration) => {
+              isDevelopment(
+                "ServiceWorker registered with scope: " + registration.scope
+              );
+            })
+            .catch((error) => {
+              isDevelopment("ServiceWorker registration failed: ", error);
+            });
+        }
+      });
+
+      function isDevelopment(message) {
+        if (
+          location.hostname === "localhost" ||
+          location.hostname === "127.0.0.1"
+        )
+          console.log(message);
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

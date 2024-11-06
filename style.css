@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+@media (min-width: 600px) {
+    body {
+        padding: 40px;
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #0e2e41; /* Light background */
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e4ececf1; /* Blue background */
+    color: Black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+section {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #4a90e2; /* Blue text color */
+    margin-bottom: 10px;
+    border-bottom: 3px solid #44b6a7; /* Orange border */
+    display: inline-block;
+}
+
+section p, section ul {
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #708db9; /* Orange background */
+    color: white;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #4a90e2; /* Blue text color */
+}
+
+footer p {
+    padding: 10px;
+    background-color: #4a90e2; /* Blue background */
+    color: white;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a90e2;
+}
+
+@media (min-width: 600px) {
+    body {
+        padding: 40px;
+    }
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #3ec4c4, #6f57f52f); /* Pink to peach gradient */
+    color: Black;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: rotate(-1deg);
+}
+
+header .profile-picture {
+    margin-bottom: 15px; /* Tambahkan jarak antara foto dan nama */
+}
+
+header .profile-picture img {
+    width: 120px; /* Atur ukuran gambar */
+    height: 120px;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover;
+    border: 4px solid white; /* Tambahkan border putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#contact {
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
