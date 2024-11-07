@@ -13,7 +13,7 @@
       <header>
         <!-- Tambahkan gambar di atas nama -->
         <div class="profile-picture">
-          <img src="images/icon-512x512.jpeg" alt="Alya Firyalda" />
+          <img src="images/alya.jpeg" alt="Alya Firyalda" />  
         </div>
         <h1>Alya Firyalda</h1>
         <p>Teknik Informatika (22205020)</p>
@@ -62,23 +62,15 @@ Outside of studies, I have a hobby of photographing random things that catch my 
           navigator.serviceWorker
             .register("service-worker.js")
             .then((registration) => {
-              isDevelopment(
+              console.log(
                 "ServiceWorker registered with scope: " + registration.scope
               );
             })
             .catch((error) => {
-              isDevelopment("ServiceWorker registration failed: ", error);
+              console.log("ServiceWorker registration failed: ", error);
             });
         }
       });
-
-      function isDevelopment(message) {
-        if (
-          location.hostname === "localhost" ||
-          location.hostname === "127.0.0.1"
-        )
-          console.log(message);
-      }
     </script>
     <script src="script.js"></script>
   </body>
