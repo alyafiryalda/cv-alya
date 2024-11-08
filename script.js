@@ -33,4 +33,8 @@ document.getElementById("contactForm").addEventListener("submit", (event) => {
     document.getElementById("responseMessage").innerText =
       "Error saving message.";
   };
+  function toggleMenu() {
+    const navMenu = document.querySelector(".nav-menu");
+    navMenu.classList.toggle("active");
+  }
 });
