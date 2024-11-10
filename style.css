@@ -194,5 +194,44 @@ button {
     border: none;
     cursor: pointer;
 }
-
+/* Social links styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color: #fff; /* Adjust color as needed */
+    font-size: 1.5em;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: rgb(0, 222, 230); /* Adjust hover color as needed */
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(127, 225, 238);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 2rem; /* Menambah jarak bawah navbar */
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
   
